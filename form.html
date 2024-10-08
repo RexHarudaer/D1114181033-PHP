@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
@@ -40,12 +40,17 @@
 </head>
 <body>
 <h1>我的表單</h1>
+<fieldset>
+    <legend>表格參數</legend>
 <form action="check.php" method="get">
     輸入表格列數:<input type="text" name="row_num" value="5"/><br/>
     輸入表格行數:<input type="text" name="col_num" value="4"/><br/>
-   
+    性別:<input type="radio" name="gender" value="M" checked >男生
+    <input type="radio" name="gender" value="F" >女生
+    <input type="radio" name="gender" value="O" >其他<br/> 
     <input type="submit" value="繳交"/>
     <input type="reset" value="重新輸入"/>
+</fieldset>
 </form>
 </body>
 </html>
